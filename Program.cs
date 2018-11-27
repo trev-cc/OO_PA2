@@ -212,9 +212,73 @@ namespace PA1
                                 switch (ch2)
                                 {
                                     //TODO (1): Add new Grad Student
-                                    case '1': break;
+                                    case '1': 
+                                        Console.WriteLine("Enter Student Name: " );
+                                        string name = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Student ID: " );
+                                        string uid = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Password: " );
+                                        string pass = Console.ReadLine();
+
+                                        Console.WriteLine("Enter GPA: " );
+                                        string gpa = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Date of Birth: " );
+                                        string dob = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Undergrad Degree: " );
+                                        string ugd = Console.ReadLine();
+
+                                        string[] inputStrings = new string[6]{name, uid, pass, gpa, dob, ugd};
+                                        int currentStudent = 0;
+
+                                        foreach(GradStudent g in gslist){
+                                            if(g.getUid() == uid){
+                                                currentStudent = 1;
+                                            }
+                                        }
+
+                                        if(currentStudent = 1){
+                                            break;
+                                            GradStudent gradStudent = new GradStudent(inputStrings);
+                                        }
+                                    break;
+
                                     //TODO (2): Add new undergrad Student,
-                                    case '2': break;
+                                    case '2':
+                                        Console.WriteLine("Enter Name: ");
+                                        string name2 = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Password: ");
+                                        string pw2 = Console.ReadLine();
+                                        
+                                        Console.WriteLine("Enter ID: ");
+                                        string uid2 = Console.ReadLine();
+
+                                        Console.WriteLine("Enter GPA: ");
+                                        string gpa2 = Console.ReadLine();
+
+                                        Console.WriteLine("Enter DoB: ");
+                                        string DoB2 = Console.ReadLine();
+
+                                        Console.WriteLine("Enter High School: ");
+                                        string highschool = Console.ReadLine();
+
+                                        Console.WriteLine("Enter Class: ");
+                                        string classif = Console.ReadLine();
+                                        string[] inputStrings2 = new string[9]{name2, pw2, uid2 ,null,DoB2,null,gpa2,highschool,classif};
+
+                                        int existAlready2 = 0;
+                                        foreach(UndergradStudent u in ugslist){
+                                            if(u.getUid() == uid2)
+                                                existAlready = 1;
+                                        }
+                                        if(existAlready2 == 1)
+                                            break;
+                                        UndergradStudent ugradstudentk = new UndergradStudent(inputStrings2);
+                                        break;
                                     case '3':
                                         foreach (GradStudent std in gslist)
                                         {
@@ -235,6 +299,32 @@ namespace PA1
                                     case '5': //TODO (3): Add new  course by asking Admin for course info., verify inputs 1st
                                               //        : ++ Save new list to File if admin agrees
                                              
+                                            Console.WriteLine("Enter Course ID: ");
+                                            string courseid = Console.ReadLine();
+
+                                            Console.WriteLine("Enter Course Name: ");
+                                            string corusename = Console.ReadLine();
+
+                                            Console.WriteLine("Enter number of Credits: ");
+                                            int credits = Convert.ToInt16(Console.ReadLine());
+
+                                            int currentCourse = 0;
+
+                                            foreach(Course x in coursesList){
+                                                if(x.cId == courseid){
+                                                    currentCourse = 1;
+                                                }
+                                            }
+
+                                            if(currentCourse == 1){
+                                                break;
+                                            }    
+
+                                            Course course = new Course(couresname, courseid, credits);
+                                            coursesList.Add(course);
+
+
+
                                          // Test: Currently adding one specific course
                                         coursesList.Add(new Course("Adv. Prog", 3312, 3));
                                         //coursesList[0].professor = (Professor )profList[0];
@@ -242,12 +332,24 @@ namespace PA1
                                     case '6': //TODO (4): Assign course to prof by getting ProfId, courseId,
                                               //        : verify inputs, and prof doesnot have >3 courses
                                               //        : ++ Save new list to File, and make the code initialize prof-course-assignment list from a file 
+                                            foreach(Professor m in profList){
+                                                Console.WriteLine(m.getUid());
+                                            }
+
+                                            Console.WriteLine("Enter ID: ");
+                                            int pID = Convert.ToInt16(Console.ReadLine());
 
                                         // Test: Currently Assign all courses to 1st prof in the list
+                                        Console.WriteLine("Enter Course ID: ");
+                                        int courseID = Convert.ToInt16(Console.ReadLine());
                                         foreach (var c in coursesList)
                                         {
-                                            c.professor = (Professor)profList[0];
-                                            c.professor.addCourseToTeach(c);
+                                            if(x.cId == CourseID){
+                                                foreach(Professor p in profList){
+                                                    c.professor = (Professor)profList[0];
+                                                    c.professor.addCourseToTeach(c);
+                                                }
+                                            } 
                                         }
                                         break;
 
@@ -303,6 +405,13 @@ namespace PA1
                                         // TODO (5): check if stud already enrolled in the course before adding
                                         if (selectedCourse != null)
                                         {
+                                            foreach(Enrollment enrol in courseEnrolls){
+                                                if(enrol.getCourse() == selectedCourse){
+                                                    if(enrol.getStudent() == student){
+                                                        break;
+                                                    }
+                                                }
+                                            }
                                             Enrollment tEn = new Enrollment(selectedCourse, student);
                                             courseEnrolls.Add(tEn);
                                             student.addEnrollment(tEn);
@@ -329,9 +438,17 @@ namespace PA1
                                         }
                                         break;
 
-                                        //case '4': 
+                                        case '4': 
                                         // TODO (6): Drop course, get cId, verify cId in student enrollments, then remove enrol.    
-
+                                            Console.WriteLine("Enter Course ID: ");
+                                            int CourseID = Convert.ToInt16(Console.ReadLine());
+                                            foreach(Enrollment encorl in courseEnrolls){
+                                                if(encorl.getCourse().cId == CourseID){
+                                                    courseEnrolls.Remove(encorl);
+                                                }
+                                            }
+                                        
+                                            break;
                                 } // switch ch2
                             } while (ch2 != '0');
                         } //else
@@ -375,22 +492,46 @@ namespace PA1
                                         //         : then add assessment info 
                                         if (selectedCourse != null)
                                         {
+                                            Console.WriteLine("Would you like to enter information for an Exam or an Assignment? ");
+                                            Console.WriteLine("Enter 1 for Exam and 2 for Assignment" );
+                                            int choice = Convert.ToInt16(Console.ReadKey());
 
-                                            Console.WriteLine("Enter Assessment info: ");
-                                            Console.WriteLine("Id = ");
-                                            string assesId = Console.ReadLine();
-                                            Console.WriteLine("Weight = ");
-                                            float aPercent = float.Parse(Console.ReadLine());
-                                            Console.WriteLine("Descr = ");
-                                            string asDescr = Console.ReadLine();
-                                            Console.WriteLine("Points = ");
-                                            float aPoints = float.Parse(Console.ReadLine());
-                                            Console.WriteLine("Due on = ");
-                                            string aDueDate = Console.ReadLine();
-                                            Console.WriteLine("Late Pen = ");
-                                            float latePen = float.Parse(Console.ReadLine());
+                                            if(choice == 1){
+                                                Console.WriteLine("Enter Exam Information: ");
+                                                Console.WriteLine("Id = ");
+                                                string assesId = Console.ReadLine();
+                                                Console.WriteLine("Weight = ");
+                                                float aPercent = float.Parse(Console.ReadLine());
+                                                Console.WriteLine("Descr = ");
+                                                string asDescr = Console.ReadLine();
+                                                Console.WriteLine("Points = ");
+                                                float aPoints = float.Parse(Console.ReadLine());
+                                                Console.WriteLine("Due on = ");
+                                                string aDueDate = Console.ReadLine();
+                                                Console.WriteLine("Late Pen = ");
+                                                float latePen = float.Parse(Console.ReadLine());
 
                                             selectedCourse.AddCourseAssesment(new Assignment(assesId, aPercent, asDescr, aPoints, aDueDate, latePen));
+                                            }
+
+                                            if(choice == 2){
+                                                Console.WriteLine("Enter Assessment Information: ");
+                                                Console.WriteLine("Id = ");
+                                                string assesId = Console.ReadLine();
+                                                Console.WriteLine("Weight = ");
+                                                float aPercent = float.Parse(Console.ReadLine());
+                                                Console.WriteLine("Descr = ");
+                                                string asDescr = Console.ReadLine();
+                                                Console.WriteLine("Points = ");
+                                                float aPoints = float.Parse(Console.ReadLine());
+                                                Console.WriteLine("Due on = ");
+                                                string aDueDate = Console.ReadLine();
+                                                Console.WriteLine("Late Pen = ");
+                                                float latePen = float.Parse(Console.ReadLine());
+
+                                            selectedCourse.AddCourseAssesment(new Assignment(assesId, aPercent, asDescr, aPoints, aDueDate, latePen));
+                                            }
+
                                         }
 
 
