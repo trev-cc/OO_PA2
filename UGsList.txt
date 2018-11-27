@@ -1,0 +1,4 @@
+uId, pw, sName, sID, DoB, Dept, GPA, HS, Class
+Bo54, 54, Bob, 547857, 03/01/99, CIDM, 4.00, PHS, Sophomore
+Ch65, 65, Charley, 65888, 07/02/01, CIDM, 3.5, LHS, Freshman
+Ev87, 87, Eve, 87785, 12/01/95, CIDM, 3.7, AHS, Junior

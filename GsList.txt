@@ -1,0 +1,4 @@
+Id, pw, sName, sID, DoB, Dept, GPA, pDeg, pUni, Dept, uGPA
+Jo12, 12, John, 12234, 01/01/81, CIS, 3.00, BSc, WTAMU, CS, 3.33
+Do12, 12, Doe, 12448, 05/22/71, CIDM, 3.25, BIT, CSU, CIS, 3.5
+Al32, 32, Alice, 32558, 10/15/91, BA, 3.8, BAcc, UCSD, ACC, 4.00

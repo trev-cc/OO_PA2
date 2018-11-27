@@ -1,0 +1,22 @@
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.deps.json
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.runtimeconfig.json
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.runtimeconfig.dev.json
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.dll
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.pdb
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.csprojAssemblyReference.cache
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.csproj.CoreCompileInputs.cache
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.AssemblyInfoInputs.cache
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.AssemblyInfo.cs
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.dll
+U:/WTAMU/MyClasses/Fall2018/OOAD/HW/PA#2/PA#2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.pdb
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.deps.json
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.runtimeconfig.json
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.runtimeconfig.dev.json
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.dll
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/bin/Debug/netcoreapp2.1/PA2-GivenCode.pdb
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.csprojAssemblyReference.cache
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.csproj.CoreCompileInputs.cache
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.AssemblyInfoInputs.cache
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.AssemblyInfo.cs
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.dll
+/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/obj/Debug/netcoreapp2.1/PA2-GivenCode.pdb

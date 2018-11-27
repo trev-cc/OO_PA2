@@ -1,0 +1,5 @@
+ uId, pw  , pName, degree, rank
+ J521, 521, John,  PhD,   AST. Prof.
+ S421, 421, Sean, PhD,    Prof. 
+ E321, 321, Elissa, PhD, ACT Prof.
+ E221, 221, Eli, PhD, ACT Prof.

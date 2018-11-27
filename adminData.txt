@@ -1,0 +1,2 @@
+id, pw ,  name
+Reg1, 000, Reg1

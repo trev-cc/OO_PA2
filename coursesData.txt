@@ -1,0 +1,5 @@
+id,  name, credits
+4360, OOA&D, 3
+1315, intro. Prog, 3
+3350, Database, 3
+4390, sw development, 3 

@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/trevorfleeman/Desktop/Fall 2018/Object/Programing Assignment 2/PA2-GivenCode/PA2-GivenCode.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
